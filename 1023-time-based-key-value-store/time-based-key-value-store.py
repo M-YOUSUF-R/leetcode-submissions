@@ -10,7 +10,6 @@ class TimeMap:
         self.ds[key].append((timestamp, value))
 
     def get(self, key: str, timestamp: int) -> str:
-        # If the key doesn't exist at all, return empty string
         if key not in self.ds:
             return ""
         
